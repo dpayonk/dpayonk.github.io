@@ -1,0 +1,67 @@
+<header class="site-header">
+
+  <div class="wrapper">
+    <a style="float:right;visibility:hidden" class="menu-icon">Menu</a>
+    <div class="small-4">
+      <a class="site-title" href="{{ site.baseurl }}/">
+        <img style="padding:5px" src="http://www.gravatar.com/avatar/2ce473d502a7e3759adc46d207c596f0.png">
+      </a>
+    </div>
+    <div class="small-8">
+      <h1 style="padding:10px 10px 0px 10px">{{ site.title }}</h1>
+      <div style="font-size:14px">{{ site.subtitle }}</div>
+    </div>
+
+  </div>
+
+</header>
+<nav class="site-nav">
+  <div class="triggers">
+    {% if page.category == 'body' %}
+      <a  class="page-link active" href="/body/">
+        Body
+      </a>
+    {% else %}
+      <a class="page-link"  href="/body/">
+        Body
+      </a>
+    {% endif %}
+    {% if page.category == 'mind'  %}
+    <a class="page-link active" href="/mind/">
+      Mind
+    </a>
+    {% else %}
+    <a class="page-link" href="/mind/">
+      Mind
+    </a>
+    {% endif %}
+    {% if page.category == 'nutrition'  %}
+      <a class="page-link active" href="/nutrition/">
+        Nutrition
+      </a>
+    {% else %}
+      <a class="page-link" href="/nutrition/">
+        Nutrition
+      </a>
+    {% endif %}
+    {% if page.category == 'purpose'  %}
+      <a class="page-link active" href="/purpose/">
+        Purpose
+      </a>
+    {% else %}
+      <a class="page-link" href="/purpose/">
+        Purpose
+      </a>
+    {% endif %}
+    {% if page.category == 'social' %}
+      <a class="page-link active" href="/social/">
+        Social
+      </a>
+    {% else %}
+      <a class="page-link" href="/social/">
+        Social
+      </a>
+    {% endif %}
+
+  </div>
+</nav>

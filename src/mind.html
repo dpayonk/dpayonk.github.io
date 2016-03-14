@@ -1,0 +1,60 @@
+---
+layout: default
+category: 'mind'
+permalink: /mind/
+---
+
+<div class="home">
+  <div class="small-12 medium-8" >
+    <h3>Writing</h3>
+    <ul class="post-list" style="margin-right:10px">
+      {% for post in site.posts %}
+      <li>
+        <div class="post-meta datetime">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <div style="display:inline-block">
+          <a style="display:inline-block;margin-left:15px" class="activity" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </div>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </div>
+  <div class="small-12 medium-4 right">
+    <h3>Reading</h3>
+    <ul class="post-list">
+      <li>
+        <div  class="post-meta datetime">Aug 15, 2015
+        </div>
+        <a style="display:block;margin-left:15px" class="activity" href="http://www.audible.com/pd/Business/Misbehaving-Audiobook/B00VQTE4OC">
+          Misbehaving: The Making of Behavioral Economics
+        </a>
+      </li>
+      <li>
+        <div  class="post-meta datetime">July 1, 2015
+        </div>
+        <a style="display:block;margin-left:15px" class="activity" href="http://www.audible.com/pd/Business/Lean-In-Audiobook/B00B3YURD2">
+          Lean In: Women, Work, and the Will to Lead
+        </a>
+      </li>
+
+
+      <li>
+        <div  class="post-meta datetime">Apr 15, 2015
+        </div>
+
+        <a style="display:block;margin-left:15px" class="activity" href="http://www.amazon.com/gp/product/B009U9S6FI/ref=oh_d__o00_details_o00__i00?ie=UTF8&amp;amp;psc=1">
+          Man's Search for Meaning
+        </a>
+      </li>
+      <li>
+        <div style="font-size:0.8em" class="post-meta">Apr 15, 2015
+        </div>
+
+        <a style="display:block;margin-left:15px" class="activity" href="http://www.amazon.com/gp/product/0679762884/ref=oh_details_o02_s00_i00?ie=UTF8&amp;amp;psc=1">
+          High Output Management
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>

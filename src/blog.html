@@ -1,0 +1,25 @@
+---
+layout: default
+category: 'blog'
+permalink: /blog/
+---
+
+<div class="home">
+  <div class="small-12 medium-8" >
+    <h3>Writing</h3>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <div class="post-meta datetime">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <div>
+          <a style="display:inline-block;margin-left:15px" class="activity" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </div>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </div>
+
+</div>

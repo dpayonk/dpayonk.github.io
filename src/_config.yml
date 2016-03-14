@@ -1,0 +1,29 @@
+# Site settings
+title: Dennis Payonk
+subtitle: A Social Engineer prattling on Biz, Health, & Tech
+author: Dennis Payonk
+
+description: A technical startup founder.
+  A social engineer with Ruby, JavaScript, C#, Postgres, and Data Science experience.
+  I build information systems and integrate data with products.
+  I am an avid reader of news & non-fiction, and consumer of IPAs & red wine.
+  And I like to golf.
+# End
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://dennispayonk.com
+twitter_username: dpayonk
+github_username:  dpayonk
+
+# Build settings
+markdown: kramdown
+
+timezone: 'America/Chicago'
+
+safe: false
+
+gems:
+  - jekyll-sitemap
+#gems: ['jekyll-jsonify']
+
+exclude:
+  - src
